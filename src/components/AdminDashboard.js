@@ -7,7 +7,7 @@ import user from "../img/user.png";
 function AdminDashboard() {
     return (
         <div className="container py-4 fixAdmin">
-            <header className="pb-3 mb-4 border-bottom">
+            <header className="pb-3 mb-4 border-bottom border-5 border-dark text-dark">
                 <span className="fs-4"><i className="bi bi-speedometer2"></i> Dashboard</span>
             </header>
             <div className="card p-5 mb-4 bg-body-tertiary rounded-3 shadow-sm border-primary">
