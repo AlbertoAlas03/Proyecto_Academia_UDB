@@ -1,6 +1,6 @@
 import React from 'react';
-import "../css/style.css";
-import firebaseapp from "../firebase/credentials.js";
+import "../../css/style.css";
+import firebaseapp from "../../firebase/credentials.js";
 import { signOut, getAuth } from "firebase/auth";
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,7 @@ function TeacherMenu() {
                                     <Link to='/' className="nav-link"><i className="bi bi-book-fill"></i> Tus cursos</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/StudentsList' className="nav-link"><i className="bi bi-person-workspace"></i> Tus estudiantes</Link>
+                                    <Link to='/StudentsList/' className="nav-link"><i className="bi bi-person-workspace"></i> Tus estudiantes</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a onClick={() => signOut(auth)} className="nav-link" href=""><i className="bi bi-box-arrow-left"></i> Cerrar Sesión</a>

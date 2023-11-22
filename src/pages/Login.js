@@ -90,7 +90,7 @@ function Login() {
                     <div className="col-md-5">
                       <div className="mt-3">
                         <p>
-                          <a href="#">¿La contraseña no funciona? (puedes dar click aquí para generar una nueva)</a>
+                          <a href="#">¿La contraseña no funciona? (Comuniquese con algún administrador)</a>
                         </p>
                       </div>
                     </div>

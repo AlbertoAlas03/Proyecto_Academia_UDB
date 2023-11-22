@@ -1,8 +1,11 @@
 import React from 'react';
-import "../css/style.css";
-import student from "../img/student.png";
-import book from "../img/book.png";
-import user from "../img/user.png";
+import "../../css/style.css";
+import student from "../../img/student.png";
+import book from "../../img/book.png";
+import user from "../../img/user.png";
+import CountDocuments from '../../functions/CountCourses';
+import CountUsers from '../../functions/CountUsers';
+import CountStudents from '../../functions/CountStudents';
 
 function AdminDashboard() {
     return (
@@ -15,21 +18,21 @@ function AdminDashboard() {
                     <h1 className="display-5 fw-bold">Cantidad de estudiantes activos</h1>
                     <img src={student} className="icon-fixed" />
                 </div>
-                <p className="text-center fw-bold font-size">300 estudiantes</p>
+                <p className="text-center fw-bold font-size"><CountStudents /></p>
             </div>
             <div className="row align-items-md-stretch">
                 <div className="col-md-6">
                     <div className="h-100 p-5 bg-body-tertiary rounded-3 shadow-sm border-primary card text-center">
                         <h1 className="display-5 fw-bold">Cursos activos</h1>
                         <img src={book} className="icon-fixed  mx-auto d-block" />
-                        <p className="font-courses fw-bold">20 cursos</p>
+                        <p className="font-courses fw-bold"><CountDocuments /></p>
                     </div>
                 </div>
                 <div className="col-md-6">
                     <div className="h-100 p-5 bg-body-tertiary border rounded-3 shadow-sm border-primary card text-center">
                         <h1 className="display-5 fw-bold">Usuarios activos</h1>
                         <img src={user} className="icon-fixed  mx-auto d-block" />
-                        <p className="font-courses fw-bold">5 usuarios</p>
+                        <p className="font-courses fw-bold"><CountUsers /></p>
                     </div>
                 </div>
             </div>

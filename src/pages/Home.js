@@ -1,7 +1,7 @@
 import React from 'react'
-import AdminView from "../components/AdminView.js";
-import TeacherView from "../components/TeacherView.js";
-import ManagerView from "../components/ManagerView.js";
+import AdminView from "../components/Admin/AdminView.js";
+import TeacherView from "../components/Teacher/TeacherView.js";
+import ManagerView from "../components/Manager/ManagerView.js";
 import "../css/style.css";
 
 function Home({ user }) {
